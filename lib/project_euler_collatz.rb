@@ -24,8 +24,8 @@ def longest_collatz
   i = 1
   longest = -1
   while i < 1000000
-    result_starter = collatz(i)[0]
-    longest = result_starter if result_starter > longest
+    result_length = collatz(i).length
+    longest = i if result_length > longest
     i += 1
   end
   longest
